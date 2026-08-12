@@ -1,13 +1,24 @@
 
-const getUserNames = (users) => {
+// const getUserNames = (users) => {
      
-    const res = users.reduce((acc, user) => {
-        acc.push(user.name)
-        return acc
-    }, [])
+//     const res = users.reduce((acc, user) => {
+//         acc.push(user.name)
+//         return acc
+//     }, [])
 
-    return res
-}
+//     return res
+// }
+
+const getUserNames = (users) => { 
+
+    const result = []
+
+    users.map(user => {
+        result.push(user.name)
+    })
+
+    return result;
+};
 
 console.log(
   getUserNames([
